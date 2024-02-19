@@ -1,57 +1,59 @@
-import React, { useState } from 'react';
-import { useSpring, animated } from 'react-spring';
-import './App.css';
+import "./App.css";
+// importing components from react-router-dom package
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Navigate,
+} from "react-router-dom";
 
-const App = () => {
-  const [animateNo, setAnimateNo] = useState(false);
-  const [animateYes, setAnimateYes] = useState(false);
+import Accept from "./components/Accept";
+import Eat from "./components/Eat";
+import Email from "./components/Email";
+ 
+function App() {
+    return (
+        <>
+            {/* This is the alias of BrowserRouter i.e. Router */}
+            <Router>
+                <Routes>
+                    {/* This route is for home component 
+          with exact path "/", in component props 
+          we passes the imported component*/}
+                    <Route
+                        exact
+                        path="/"
+                        element={<Accept />}
+                    />
 
-  const [scaleFactor, setScaleFactor] = useState(1);
-
-  const scaleAndOpacity = useSpring({
-    //opacity: animateNo ? 1 : 1,
-    transform: `scale(${animateNo ? scaleFactor : 1})`,
-  });
-
-  const springPropsYes = useSpring({
-    opacity: animateYes ? 1 : 1,
-    transform: animateYes ? 'scale(5)' : 'scale(1)',
-  });
-
-  const handleClickNo = () => {
-    setAnimateNo(!animateNo);
-    setScaleFactor(scaleFactor - 0.1);
-  };
-
-  const handleClickYes = () => {
-    setAnimateYes(!animateYes);
-    const delay = 2000; // 2 seconds in milliseconds
-    setTimeout(() => {
-      // Open a new tab with the YouTube video after the delay
-      window.open('https://www.youtube.com/watch?v=3qgjbiRcfzs&ab_channel=PeppaPig-OfficialChannel', '_blank');
-      // Replace 'VIDEO_ID' with the actual ID of the YouTube video you want to share
-    }, delay);
-  };
-
-  return (
-    <div className="app">
-      <h1>Hello Ms. Shannon!!!</h1>
-      <img
-          src="/pep.jpeg"
-          alt='MS SHANNON CHIA piggy i stole from her tiktok'
-        />
-      <h1>Will you be my Valentine?</h1>
-      <animated.div style={{ ...scaleAndOpacity }} className="heart" onClick={handleClickNo}>
-        No
-      </animated.div>
-      <animated.div style={springPropsYes} className="heart" onClick={handleClickYes}>
-        <span role="img" aria-label="heart">
-          Yes
-        </span>
-      </animated.div>
-      <p className="message">Click the Yes to reveal the magic!</p>
-    </div>
-  );
-};
-
+                    {/* This route is for contactus component
+          with exact path "/contactus", in 
+          component props we passes the imported component*/}
+                    <Route
+                        path="/Email"
+                        element={<Email />}
+                    />
+ 
+                    {/* This route is for contactus component
+          with exact path "/contactus", in 
+          component props we passes the imported component*/}
+                    <Route
+                        path="/Eat"
+                        element={<Eat />}
+                    />
+ 
+                    {/* If any route mismatches the upper 
+          route endpoints then, redirect triggers 
+          and redirects app to home component with to="/" */}
+                    {/* <Redirect to="/" /> */}
+                    <Route
+                        path="*"
+                        element={<Navigate to="/" />}
+                    />
+                </Routes>
+            </Router>
+        </>
+    );
+}
+ 
 export default App;
