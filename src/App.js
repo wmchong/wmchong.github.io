@@ -9,7 +9,8 @@ import {
 
 import Accept from "./components/Accept";
 import Eat from "./components/Eat";
-import Email from "./components/Email";
+import Calendar from "./components/Calendar";
+import Weee from "./components/Weee";
  
 function App() {
     return (
@@ -30,8 +31,8 @@ function App() {
           with exact path "/contactus", in 
           component props we passes the imported component*/}
                     <Route
-                        path="/Email"
-                        element={<Email />}
+                        path="/Calendar"
+                        element={<Calendar />}
                     />
  
                     {/* This route is for contactus component
@@ -40,6 +41,14 @@ function App() {
                     <Route
                         path="/Eat"
                         element={<Eat />}
+                    />
+
+                    {/* This route is for contactus component
+          with exact path "/contactus", in 
+          component props we passes the imported component*/}
+                    <Route
+                        path="/Weee"
+                        element={<Weee />}
                     />
  
                     {/* If any route mismatches the upper 
