@@ -46,7 +46,7 @@ const Eat = () => {
     sendEmail(e);
     //send email to me
 
-
+    alert('wah you can eat alot ah 🤣🤣🤣');
     // Navigate to the next page
     navigate('/Weee');
   };
