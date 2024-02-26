@@ -1,16 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.269ea5d1.css",
-    "main.js": "/static/js/main.e9fb1048.js",
+    "main.css": "/static/css/main.310a3bd3.css",
+    "main.js": "/static/js/main.0368e524.js",
     "static/js/592.7933931e.chunk.js": "/static/js/592.7933931e.chunk.js",
+    "static/media/finger_cat.gif": "/static/media/finger_cat.42cf5aa011773088aaf9.gif",
+    "static/media/noodle_hamster.gif": "/static/media/noodle_hamster.8349f0deebc770ed5a7e.gif",
+    "static/media/pizza.jpg": "/static/media/pizza.fb9cebbfaa1d595c6e70.jpg",
+    "static/media/steak.jpg": "/static/media/steak.936ec6b4bcf469493113.jpg",
+    "static/media/waffle.jpg": "/static/media/waffle.296785a8837c3b6547ee.jpg",
+    "static/media/burger.jpg": "/static/media/burger.95d3ef68c68dec69d510.jpg",
+    "static/media/taco.jpg": "/static/media/taco.9c781059cacfc8c886fb.jpg",
+    "static/media/ramen.jpg": "/static/media/ramen.a97fd122eedee79534da.jpg",
+    "static/media/typing_cat.gif": "/static/media/typing_cat.185ace0e3c4b36f460dc.gif",
     "static/media/begging_cat.gif": "/static/media/begging_cat.0c149c69f562c92e93cd.gif",
+    "static/media/bingsu.jpg": "/static/media/bingsu.0a5ff2d1e8b12a505b1f.jpg",
+    "static/media/cake.jpg": "/static/media/cake.3a7c3da0555196979744.jpg",
+    "static/media/pasta.jpg": "/static/media/pasta.9aaae5ec1db56e153837.jpg",
+    "static/media/icecream.jpg": "/static/media/icecream.112505350ac834108dbe.jpg",
+    "static/media/me.jpg": "/static/media/me.74bc5f6f2f3ad2f6bff6.jpg",
+    "static/media/sushi.jpg": "/static/media/sushi.89ea1a5ad43d53c6e152.jpg",
     "index.html": "/index.html",
-    "main.269ea5d1.css.map": "/static/css/main.269ea5d1.css.map",
-    "main.e9fb1048.js.map": "/static/js/main.e9fb1048.js.map",
+    "main.310a3bd3.css.map": "/static/css/main.310a3bd3.css.map",
+    "main.0368e524.js.map": "/static/js/main.0368e524.js.map",
     "592.7933931e.chunk.js.map": "/static/js/592.7933931e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.269ea5d1.css",
-    "static/js/main.e9fb1048.js"
+    "static/css/main.310a3bd3.css",
+    "static/js/main.0368e524.js"
   ]
 }
