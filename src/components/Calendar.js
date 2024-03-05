@@ -10,8 +10,6 @@ const Calendar = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Save the input text (you can use context, Redux, or other state management)
-    // For simplicity, we'll use localStorage in this example
     localStorage.setItem('date', date);
     // Navigate to the next page
     navigate('/Eat');

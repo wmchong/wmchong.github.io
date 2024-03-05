@@ -40,13 +40,12 @@ const Eat = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Save the input text (you can use context, Redux, or other state management)
-    // For simplicity, we'll use localStorage in this example
-    //localStorage.setItem('selectedImages', selectedImages);
+
     sendEmail(e);
     //send email to me
-
-    alert('wah you can eat alot ah 🤣🤣🤣');
+    if (selectedImages.length > 2) {
+      alert('wah you can eat alot ah 🤣🤣🤣');
+    }
     // Navigate to the next page
     navigate('/Weee');
   };
@@ -74,6 +73,7 @@ const Eat = () => {
       <p>(p.s. hamster is not a choice!)</p>
       <div>
       <h1>Meals and/or desserts</h1>
+      <p>(p.s. click to select, then press the button below!)</p>
       <div className="image-container">
         {images.map((image) => (
           <img style={{ width: 200, height: 200 }}

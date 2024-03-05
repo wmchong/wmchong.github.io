@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate  } from 'react-router-dom'
 
-const input_name_here = 'WOI'
+const input_name_here = '   '
 
 const Accept = () => {
 
-  let pic = require("../assets/pep.jpeg")
+  //let pic = require("../assets/pep.jpeg")
   let loadingGif = require("../assets/begging_cat.gif")
   const navigate = useNavigate();
   const goToCalendar = () => {
@@ -30,8 +30,8 @@ const Accept = () => {
   return (
     <div>
         <h1>Hello Miss {input_name_here}</h1>
-        <img src={pic} alt="my-gif" />
-        <h2>Would you like to be my valentines? 😊</h2>
+        {/* <img src={pic} alt="my-gif" /> */}
+        <h2>Would you like to go on a date 😊</h2>
         <img src={loadingGif} alt="my-gif" />
         <p></p>
         <button style={buttonStyle} onClick={handleClick} disabled={buttonDisabled}>No</button> 
